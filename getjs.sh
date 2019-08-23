@@ -1,4 +1,5 @@
 #!/bin/sh
+output=$output
 for i in $(wc -l getjs.txt)
 do
 file=$(head -$i getjs.txt |tail -1)
