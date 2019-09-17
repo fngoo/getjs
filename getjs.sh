@@ -2,7 +2,7 @@
  
 a=$(cat getjs.txt|wc -l) ; let ac=a/4 ; let dc=a/2 ; let rock=ac*3
 
-touch $output/3_js
+mkdir $output/3_js
 echo '#!/bin/bash'>getjs1.sh
 echo 'for((i=1;i<$ac;i+=1)); do file=$(head -$i getjs.txt |tail -1); output=$output; touch $output/3_js/$i.js; curl -L $file>>$output/3_js/$i.js; done'>>getjs1.sh
 echo '#!/bin/bash'>getjs2.sh
