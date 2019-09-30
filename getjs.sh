@@ -16,7 +16,7 @@ rm getjs1.sh
 
 else
 
-a=$(cat getjs.txt|wc -l) ; ac=$((a/4)) ; dc=$((a/2)) ; rock=$((ac*3)
+a=$(cat getjs.txt|wc -l) ; ac=$((a/4)) ; dc=$((a/2)) ; rock=$((ac*3))
 
 mkdir $output/3_js
 echo '#!/bin/bash'>getjs1.sh
