@@ -9,7 +9,7 @@ i=1
 a=$(cat getjs.txt|wc -l)
 mkdir $output/3_js
 echo '#!/bin/bash'>getjs1.sh
-echo 'for((i=1;i<$a;i+=1)); do file=$(head -$i getjs.txt |tail -1); output=$output; touch $output/3_js/$i.js; curl -L --speed-time 5 --speed-limit 1 $file>>$output/3_js/$i.js; done'>>getjs1.sh
+echo 'for((i=1;i<'$a';i+=1)); do file=$(head -$i getjs.txt |tail -1); output=$output; touch $output/3_js/$i.js; curl -L --speed-time 5 --speed-limit 1 $file>>$output/3_js/$i.js; done'>>getjs1.sh
 bash getjs1.sh
 rm getjs1.sh
 
