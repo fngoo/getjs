@@ -1,6 +1,7 @@
 #!/bin/bash
 
-x=4 ; input=httprobe.txt ; export x=4 ; export input=httprobe.txt
+cd /root/script/3_httprobe
+x=4 ; input=getjs.txt ; export x=4 ; export input=getjs.txt
 length=`wc -l $input|grep -o -P ".*?(?=\ )"`
 #dir_num=$((x*x))
 if [ $length -lt $x ]
